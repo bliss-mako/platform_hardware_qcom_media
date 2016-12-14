@@ -9,7 +9,7 @@ ifneq ($(TARGET_BOARD_AUTO),true)
     QCOM_MEDIA_ROOT := $(call my-dir)/msmcobalt
   endif
 
-  ifneq ($(filter msm8610 msm8226 msm8974 msm8960 msm8660 msm7627a msm7630_surf msm8084 msm8952 msm8992 msm8994 msm8996ms mcobalt,$(TARGET_BOARD_PLATFORM)),)
+  ifneq ($(filter msm8610 msm8226 msm8974 msm8960 msm8660 msm7627a msm7630_surf msm8084 msm8952 msm8992 msm8994 msm8996 msmcobalt,$(TARGET_BOARD_PLATFORM)),)
     include $(QCOM_MEDIA_ROOT)/mm-core/Android.mk
     include $(QCOM_MEDIA_ROOT)/libstagefrighthw/Android.mk
   endif
